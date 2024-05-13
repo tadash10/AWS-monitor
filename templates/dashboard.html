@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Dashboard</title>
+</head>
+<body>
+    <h1>AWS Dashboard</h1>
+    
+    <h2>IAM Roles:</h2>
+    <ul>
+        {% for role in iam_roles %}
+            <li>{{ role['RoleName'] }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h2>EC2 Instances:</h2>
+    <ul>
+        {% for reservation in ec2_instances %}
+            {% for instance in reservation['Instances'] %}
+                <li>{{ instance['InstanceId'] }}</li>
+            {% endfor %}
+        {% endfor %}
+    </ul>
+    
+    <h2>CloudTrail Trails:</h2>
+    <ul>
+        {% for trail in cloudtrail_trails %}
+            <li>{{ trail['Name'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
