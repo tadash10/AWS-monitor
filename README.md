@@ -41,3 +41,13 @@ The script will execute various security measures automatically, including:
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+    Run the Flask application:
+
+bash
+
+python app.py
+
+This will start a local server, and you can access the dashboard in your browser at http://127.0.0.1:5000/. The dashboard will display information about IAM roles, EC2 instances, and CloudTrail trails retrieved from AWS using the Boto3 client.
+
+
