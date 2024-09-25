@@ -1,7 +1,7 @@
 # AWS-monitor
 This Python script automates various security measures in an AWS environment, including user access control, instance security configuration, monitoring and logging setup, incident response planning, and compliance auditing. The script utilizes AWS services such as IAM, EC2, CloudWatch, CloudTrail, and Systems Manager to enhance the security posture of your AWS infrastructure.
+First steps 
 Installation:
-
     Prerequisites:
         Python 3.x installed on your system.
         AWS CLI configured with necessary permissions.
